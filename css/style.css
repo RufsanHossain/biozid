@@ -15,7 +15,6 @@ body {
   flex-direction: column;
   flex-wrap: nowrap;
   gap: 0px;
-  height: min-content;
   justify-content: flex-start;
   overflow: visible;
   padding: 0;
@@ -83,7 +82,6 @@ section {
   overflow: visible;
   padding: 0;
   position: relative;
-  width: 1px;
 }
 
 .section-title-line-1 {
@@ -169,10 +167,8 @@ section {
   gap: 10px;
   height: min-content;
   justify-content: flex-end;
-  overflow: hidden;
   padding: 0;
   position: relative;
-  width: 1px;
 }
 
 .section-description div {
@@ -289,7 +285,6 @@ section {
   flex-direction: row;
   flex-wrap: nowrap;
   gap: 0px;
-  /* height: min-content; */
   justify-content: center;
   overflow: hidden;
   padding: 0;
@@ -304,7 +299,6 @@ section {
   flex: 1 0 0px;
   flex-direction: row;
   flex-wrap: nowrap;
-  /* height: min-content; */
   justify-content: space-between;
   max-width: 1080px;
   overflow: visible;
@@ -321,7 +315,6 @@ section {
   flex: 1 0 0px;
   flex-direction: row;
   flex-wrap: nowrap;
-  /* height: min-content; */
   justify-content: space-between;
   overflow: visible;
   padding: 0;
@@ -546,10 +539,8 @@ section {
   transform: perspective(1200px);
   flex: none;
   height: auto;
-  /* max-width: 600px; */
   min-width: 300px;
   position: relative;
-  /* white-space: pre-wrap; */
   width: 100%;
   word-break: break-word;
   word-wrap: break-word;
@@ -906,14 +897,9 @@ section {
   padding-bottom: 2.5rem;
 }
 
-.call-out {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 2.5rem;
+/* .call-out {
   position: relative;
-}
+} */
 
 .contact .cta {
   border: 2px solid white;
@@ -924,4 +910,41 @@ section {
   font-weight: bolder;
   font-size: 20px;
   padding: 1rem 1.6rem;
+  display: block;
+  margin: 2rem auto;
+}
+
+@media only screen and (max-width: 1200px) {
+  .section-data {
+    flex-direction: column;
+    gap: 4.5rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .hero {
+    height: 70vh;
+  }
+  .heading h1 {
+    font-size: 3.4rem;
+  }
+  .featured .featured-work article {
+    width: 100%;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  .skill h3,
+  .job h3 {
+    font-size: 1.8rem;
+  }
+
+  .job h4 {
+    font-size: 1.4rem;
+  }
+
+  .skill p,
+  .job-info {
+    font-size: 1.2rem;
+  }
 }
