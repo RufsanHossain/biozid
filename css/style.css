@@ -25,7 +25,7 @@ body {
 
 h2 {
   font-family: "Inter Tight", "Inter Tight Placeholder", sans-serif;
-  font-size: 90px;
+  font-size: 5.625rem;
   font-weight: 700;
   letter-spacing: -2.3px;
   line-height: 80px;
@@ -34,6 +34,10 @@ h2 {
   text-transform: uppercase;
   margin: 0px;
   padding: 0px;
+}
+
+section {
+  padding: 2.5rem 0;
 }
 
 .section-info {
@@ -68,7 +72,7 @@ h2 {
 }
 
 .section-title {
-  align-items: flex-start;
+  /* align-items: flex-start; */
   display: flex;
   flex: 1 0 0px;
   flex-direction: column;
@@ -189,7 +193,7 @@ h2 {
 
 .section-description div p {
   font-family: "Inter Tight", "Inter Tight Placeholder", sans-serif;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 500;
   letter-spacing: 0.4px;
   line-height: 34px;
@@ -553,7 +557,7 @@ h2 {
 }
 
 .heading h1 {
-  font-size: 100px;
+  font-size: 6.25rem;
   font-style: normal;
   letter-spacing: -0.03em;
   line-height: 1.2em;
@@ -762,7 +766,9 @@ h2 {
 /* featured and expertise*/
 .featured,
 .expertise,
-.motivation {
+.motivation,
+.experience,
+.contact {
   align-items: center;
   display: flex;
   flex: none;
@@ -832,7 +838,7 @@ h2 {
 
 .featured .featured-work article .work-details .name {
   font-family: "Instrument Sans", "Instrument Sans Placeholder", sans-serif;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 600;
   letter-spacing: 0px;
   line-height: 28px;
@@ -850,7 +856,8 @@ h2 {
 }
 
 /* skill */
-.skill {
+.skill,
+.job {
   color: rgb(255, 255, 255);
   display: flex;
   flex-wrap: wrap;
@@ -859,22 +866,31 @@ h2 {
   gap: 2rem;
 }
 
-.skill article {
+.skill article,
+.job article {
   width: 85%;
   border: 1px solid #1d1d1d;
   border-radius: 10px;
   background-color: #0a0a0a;
-  padding: 30px 40px;
+  padding: 3rem 2.5rem;
+  line-height: 1.2;
 }
 
-.skill h3 {
-  font-size: 36px;
+.skill h3,
+.job h3 {
+  font-size: 2.25rem;
   margin: 1rem 0;
 }
 
-.skill p {
+.job h4 {
+  font-size: 1.8rem;
+  line-height: 2;
+}
+
+.skill p,
+.job-info {
   font-family: "Inter Tight", "Inter Tight Placeholder", sans-serif;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 500;
   letter-spacing: 0.4px;
   line-height: 34px;
@@ -883,4 +899,25 @@ h2 {
 /* motivation section */
 .signature {
   width: 200px;
+}
+
+/* contact */
+.call-out {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  position: relative;
+}
+
+.contact .cta {
+  border: 2px solid white;
+  border-radius: 100px;
+  opacity: 1;
+  background-color: rgb(255, 255, 255);
+  color: #000;
+  font-weight: bolder;
+  font-size: 20px;
+  padding: 1rem 1.6rem;
 }
